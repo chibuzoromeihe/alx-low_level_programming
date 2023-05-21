@@ -14,6 +14,7 @@ int main(void)
 		if (x == 57)
 {
 			continue;
+}
 		putchar(',');
 		putchar(' ');
 }
@@ -21,5 +22,4 @@ int main(void)
 
 	return (0);
 
-}
 }
