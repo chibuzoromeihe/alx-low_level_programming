@@ -21,19 +21,17 @@ int main(void)
 {
 				if (z > y && y > x)
 {
-					putchar(x);
-					putchar(y);
-					putchar(z);
-						if (x != 55 || y != 56)
-						continue;
-						putchar(',');
-						putchar(' ');
+				putchar(x);
+				putchar(y);
+				putchar(z);
+					if (x != 55 || y != 56)
+					putchar(',');
+					putchar(' ');
 }
 }
 
 }
 }
-	putchar('\n');
-	return (0);
+putchar('\n');
+return (0);
 }
-
