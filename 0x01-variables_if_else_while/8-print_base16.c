@@ -10,11 +10,11 @@ int main(void)
 	int num;
 	int alph;
 
-	for (num = 48; num <= 57; num++)
+	for (num = '0'; num <= '9'; num++)
 {
 		putchar(num);
 }
-	for (alph = 07; alph <= 102; alph++)
+	for (alph = 'a'; alph <= 'f'; alph++)
 {
 		putchar(alph);
 }
