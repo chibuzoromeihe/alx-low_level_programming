@@ -20,10 +20,10 @@ char *cap_string(char *s)
 		if (s[cap_string] == ' ' || s[cap_string] == '\t'
 || s[cap_string] == '\n' || s[cap_string] == ',' || s[cap_string] == ';' || s[
 cap_string] == '.' || s[cap_string] == '.' || s[cap_string] == '|'
-|| s[cap_string] == '?' || s[cap_string] == '=' || s[cap_string] == '(' ||
-s[cap_string]== ')' || s[cap_string] == '(' || s[cap_string] == ')')
+|| s[cap_string] == '?' || s[cap_string] == '"' || s[cap_string] == '(' ||
+s[cap_string] == ')' || s[cap_string] == '{' || s[cap_string] == '}')
 		{
-		if (s[cap_string + 1] >= 97 && s[cap_string + 1] <= 122)
+			if (s[cap_string + 1] >= 97 && s[cap_string + 1] <= 122)
 			{
 				s[cap_string + 1] = s[cap_string + 1] - 32;
 			}
