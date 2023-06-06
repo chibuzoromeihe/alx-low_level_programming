@@ -6,27 +6,22 @@
  * Return: Returns pointer to s
  */
 
-char *leet(char *)
+char *leet(char *s)
 {
-	int l, leetcount;
+	int i, x;
 
-	char leetletters[] = "aAeEoOtTlL"
-	char leetNumbers[] = "4433007711"
-	l = 0;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	while (s[l] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		leetcount = 0;
-
-		while (leetcount < 10)
+		for (x = 0; x < 10; x++)
 		{
-			if (leetletters[leetcount] == s[l])
+			if (s[i] == s1[x])
 			{
-				s[l] = leetnumbers[leetcount];
+				s[i] = s2[x];
 			}
-			leetcount++;
 		}
-		l++;
 	}
 	return (s);
 }
